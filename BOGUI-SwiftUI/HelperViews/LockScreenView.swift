@@ -155,7 +155,7 @@ struct LockScreenView: View {
                 Text("Forgot password?")
                     .frame(width: 400, height: 35, alignment: .center)
                     .background(Color(#colorLiteral(red: 0.9724155068, green: 0.9278865457, blue: 0.8984619975, alpha: 1)))
-                    .tint(Color(#colorLiteral(red: 0.9917085767, green: 0.4014373124, blue: 0.1002244577, alpha: 1)))
+                    .tint(.buttonColor)
                     .cornerRadius(20)
                     
             })
@@ -173,7 +173,7 @@ struct LockScreenView: View {
 struct LockScreenView_Previews: PreviewProvider {
     static var previews: some View {
         LockScreenView()
-            .previewLayout(.sizeThatFits)
+            
             
             
             

@@ -28,14 +28,14 @@ struct TabBarView: View {
             }, label: {
                 TabBarButton(buttonText: "Home", imageName: "house.fill", isActive: selectedTab == .home)
             })
-            .tint(selectedTab == .home ? Color (#colorLiteral(red: 0.9917085767, green: 0.4014373124, blue: 0.1002244577, alpha: 1)):  Color(.secondaryLabel)  )
+            .tint(selectedTab == .home ? .buttonColor :  Color(.secondaryLabel)  )
             
             Button(action: {
                 selectedTab = .cards
             }, label: {
                 TabBarButton(buttonText: "Cards", imageName: "creditcard", isActive: selectedTab == .cards)
             })
-            .tint(selectedTab == .cards ? Color (#colorLiteral(red: 0.9917085767, green: 0.4014373124, blue: 0.1002244577, alpha: 1)):  Color(.secondaryLabel)  )
+            .tint(selectedTab == .cards ? .buttonColor :  Color(.secondaryLabel)  )
             Button(action: {
                 selectedTab = .money
             }, label: {
@@ -57,20 +57,20 @@ struct TabBarView: View {
                 
                                 }
             })
-            .tint(selectedTab == .money ? Color (#colorLiteral(red: 0.9917085767, green: 0.4014373124, blue: 0.1002244577, alpha: 1)):  Color(.secondaryLabel)  )
+            .tint(selectedTab == .money ? .buttonColor :  Color(.secondaryLabel)  )
             
             Button(action: {
                 selectedTab = .extraction
             }, label: {
                 TabBarButton(buttonText: "Extraction", imageName: "newspaper", isActive: selectedTab == .extraction)
             })
-            .tint(selectedTab == .extraction ? Color (#colorLiteral(red: 0.9917085767, green: 0.4014373124, blue: 0.1002244577, alpha: 1)):  Color(.secondaryLabel)  )
+            .tint(selectedTab == .extraction ? .buttonColor :  Color(.secondaryLabel)  )
             Button(action: {
                 selectedTab = .more
             }, label: {
                 TabBarButton(buttonText: "More", imageName: "ellipsis.circle", isActive: selectedTab == .more)
             })
-            .tint(selectedTab == .more ? Color (#colorLiteral(red: 0.9917085767, green: 0.4014373124, blue: 0.1002244577, alpha: 1)):  Color(.secondaryLabel)  )
+            .tint(selectedTab == .more ? .buttonColor :  Color(.secondaryLabel)  )
         
         }
         .frame(height: 60)

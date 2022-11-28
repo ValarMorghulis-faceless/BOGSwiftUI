@@ -11,6 +11,10 @@
 		0F5244E22933CDB700B7A6DD /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5244E12933CDB700B7A6DD /* TabBarButton.swift */; };
 		0F5244E52933D26900B7A6DD /* LockScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5244E42933D26800B7A6DD /* LockScreenView.swift */; };
 		0F5244E72933D9FF00B7A6DD /* NumberButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5244E62933D9FF00B7A6DD /* NumberButton.swift */; };
+		0F52451629355ABC00B7A6DD /* MainLockScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F52451529355ABC00B7A6DD /* MainLockScreenView.swift */; };
+		0F52451829355B0400B7A6DD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F52451729355B0400B7A6DD /* Extensions.swift */; };
+		0F52451A29355CA700B7A6DD /* TabBarButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F52451929355CA700B7A6DD /* TabBarButtonView.swift */; };
+		0F52451C29355E9F00B7A6DD /* AppStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F52451B29355E9F00B7A6DD /* AppStateManager.swift */; };
 		0F73ACD52921561F001F9175 /* BOGUI_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F73ACD42921561F001F9175 /* BOGUI_SwiftUIApp.swift */; };
 		0F73ACD72921561F001F9175 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F73ACD62921561F001F9175 /* ContentView.swift */; };
 		0F73ACD929215621001F9175 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F73ACD829215621001F9175 /* Assets.xcassets */; };
@@ -27,6 +31,10 @@
 		0F5244E12933CDB700B7A6DD /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
 		0F5244E42933D26800B7A6DD /* LockScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreenView.swift; sourceTree = "<group>"; };
 		0F5244E62933D9FF00B7A6DD /* NumberButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberButton.swift; sourceTree = "<group>"; };
+		0F52451529355ABC00B7A6DD /* MainLockScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLockScreenView.swift; sourceTree = "<group>"; };
+		0F52451729355B0400B7A6DD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		0F52451929355CA700B7A6DD /* TabBarButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButtonView.swift; sourceTree = "<group>"; };
+		0F52451B29355E9F00B7A6DD /* AppStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateManager.swift; sourceTree = "<group>"; };
 		0F73ACD12921561F001F9175 /* BOGUI-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BOGUI-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F73ACD42921561F001F9175 /* BOGUI_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOGUI_SwiftUIApp.swift; sourceTree = "<group>"; };
 		0F73ACD62921561F001F9175 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +65,7 @@
 				0F5244E12933CDB700B7A6DD /* TabBarButton.swift */,
 				0F5244E42933D26800B7A6DD /* LockScreenView.swift */,
 				0F5244E62933D9FF00B7A6DD /* NumberButton.swift */,
+				0F52451929355CA700B7A6DD /* TabBarButtonView.swift */,
 			);
 			path = HelperViews;
 			sourceTree = "<group>";
@@ -80,11 +89,14 @@
 		0F73ACD32921561F001F9175 /* BOGUI-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				0F5244E32933D23F00B7A6DD /* HelperViews */,
 				0F73ACE229215C0F001F9175 /* Views */,
 				0F73ACD42921561F001F9175 /* BOGUI_SwiftUIApp.swift */,
 				0F73ACD62921561F001F9175 /* ContentView.swift */,
 				0F73ACD829215621001F9175 /* Assets.xcassets */,
 				0F73ACDA29215621001F9175 /* Preview Content */,
+				0F52451729355B0400B7A6DD /* Extensions.swift */,
+				0F52451B29355E9F00B7A6DD /* AppStateManager.swift */,
 			);
 			path = "BOGUI-SwiftUI";
 			sourceTree = "<group>";
@@ -100,12 +112,12 @@
 		0F73ACE229215C0F001F9175 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0F5244E32933D23F00B7A6DD /* HelperViews */,
 				0F73ACE329215C23001F9175 /* HomeView.swift */,
 				0F73ACE529215C34001F9175 /* CardsView.swift */,
 				0F73ACE729215C42001F9175 /* MoneyView.swift */,
 				0F73ACE929215C64001F9175 /* ExtractionView.swift */,
 				0F73ACEB29215C7A001F9175 /* MoreView.swift */,
+				0F52451529355ABC00B7A6DD /* MainLockScreenView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -180,13 +192,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F52451A29355CA700B7A6DD /* TabBarButtonView.swift in Sources */,
 				0F73ACEC29215C7A001F9175 /* MoreView.swift in Sources */,
 				0F73ACE829215C42001F9175 /* MoneyView.swift in Sources */,
 				0F5244E02933CDA700B7A6DD /* TabBarView.swift in Sources */,
+				0F52451C29355E9F00B7A6DD /* AppStateManager.swift in Sources */,
 				0F73ACE429215C23001F9175 /* HomeView.swift in Sources */,
+				0F52451629355ABC00B7A6DD /* MainLockScreenView.swift in Sources */,
 				0F73ACD72921561F001F9175 /* ContentView.swift in Sources */,
 				0F5244E22933CDB700B7A6DD /* TabBarButton.swift in Sources */,
 				0F73ACEA29215C64001F9175 /* ExtractionView.swift in Sources */,
+				0F52451829355B0400B7A6DD /* Extensions.swift in Sources */,
 				0F5244E72933D9FF00B7A6DD /* NumberButton.swift in Sources */,
 				0F5244E52933D26900B7A6DD /* LockScreenView.swift in Sources */,
 				0F73ACE629215C34001F9175 /* CardsView.swift in Sources */,
